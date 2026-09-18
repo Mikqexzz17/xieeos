@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Xiee OS — lekki system operacyjny oparty na Linuksie i napisany w Rust. Szybki, modułowy i gotowy dla starszych urządzeń." />
+    <meta name="theme-color" content="#0b0e13" />
+    <title>Xiee OS — lekki system. wielkie możliwości.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#start" aria-label="Xiee OS — strona główna">
+        <span class="brand-mark"><span>×</span></span>
+        <span class="brand-name">XIEE <em>OS</em></span>
+      </a>
+      <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Główna nawigacja">
+        <a href="#dlaczego">Dlaczego Xiee</a>
+        <a href="#architektura">Architektura</a>
+        <a href="#komponenty">Komponenty</a>
+        <a href="#roadmapa">Roadmapa</a>
+      </nav>
+      <a class="button button-small header-cta" href="https://github.com/Mikqexzz17/xieeforjules" target="_blank" rel="noreferrer">
+        Zobacz kod <span class="arrow">↗</span>
+      </a>
+    </header>
+
+    <main id="start">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> OPEN SOURCE / RUST / LINUX</div>
+          <h1>Mały system.<br /><span>Wielka</span> swoboda.</h1>
+          <p class="hero-lead">Xiee OS to lekki, modułowy system operacyjny dla starszych urządzeń. Zbudowany w Rust, zaprojektowany bez zbędnego balastu.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#architektura">Poznaj system <span>↓</span></a>
+            <a class="text-link" href="https://github.com/Mikqexzz17/xieeforjules" target="_blank" rel="noreferrer">Przejdź do GitHub <span>↗</span></a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>01</strong><span>Minimalny<br />narzut</span></div>
+            <div><strong>02</strong><span>Modułowa<br />architektura</span></div>
+            <div><strong>03</strong><span>Pełna kontrola<br />użytkownika</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="system-card">
+            <div class="window-top"><span class="window-title"><span class="tiny-logo">×</span> xiee-desktop</span><span class="window-dots">— □ ×</span></div>
+            <div class="desktop-preview">
+              <div class="preview-grid"></div>
+              <div class="preview-sun"></div>
+              <div class="preview-horizon"></div>
+              <div class="preview-mountain mountain-back"></div><div class="preview-mountain mountain-front"></div>
+              <div class="preview-terminal"><span class="prompt">xiee@system</span>:~$ <span class="cursor">_</span><br /><span class="muted">system ready · 6 processes</span></div>
+              <div class="preview-dock"><span class="dock-active">×</span><span>▣</span><span>◈</span><span>⌁</span><span>⚙</span></div>
+            </div>
+          </div>
+          <div class="float-chip chip-top"><span class="chip-icon green">↯</span><span>RAM usage <b>184 MB</b></span></div>
+          <div class="float-chip chip-bottom"><span class="chip-icon orange">◎</span><span>Built with <b>Rust</b></span></div>
+          <div class="visual-label">XI / 2025</div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Najważniejsze cechy">
+        <div class="ticker-track"><span>LEKKI</span><i>×</i><span>MODUŁOWY</span><i>×</i><span>OTWARTY</span><i>×</i><span>RUST + LINUX</span><i>×</i><span>LEKKI</span><i>×</i><span>MODUŁOWY</span><i>×</i><span>OTWARTY</span><i>×</i><span>RUST + LINUX</span><i>×</i></div>
+      </section>
+
+      <section class="section-shell why-section" id="dlaczego">
+        <div class="section-intro reveal"><span class="section-number">01 /</span><h2>Po co kolejny<br /><em>system operacyjny?</em></h2><p>Bo stare urządzenia wciąż mają potencjał. Xiee OS usuwa warstwy, których nie potrzebujesz, i zostawia to, co naprawdę ważne.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-main reveal"><span class="card-index">A / PERFORMANCE</span><div class="feature-icon icon-speed">↯</div><h3>Szybki od pierwszego uruchomienia</h3><p>Minimalny userspace i zoptymalizowane binaria sprawiają, że system startuje szybko nawet na sprzęcie, który dawno przestał być wspierany.</p><div class="metric"><strong>~184<span> MB</span></strong><small>typowe zużycie RAM<br />po starcie</small></div></article>
+          <article class="feature-card reveal reveal-delay"><span class="card-index">B / CLARITY</span><div class="feature-icon icon-box">◇</div><h3>Moduły, nie monolit</h3><p>Każdy element ma jedno zadanie. Wymień, wyłącz lub rozbuduj go bez przebudowywania całego systemu.</p><div class="line-graphic"><span></span><span></span><span></span><span></span></div></article>
+          <article class="feature-card reveal reveal-delay-2"><span class="card-index">C / OWNERSHIP</span><div class="feature-icon icon-lock">⌁</div><h3>Twój sprzęt, twoje zasady</h3><p>Bez telemetrycznych usług w tle. Otwarty kod i proste narzędzia dają pełną widoczność nad tym, co robi system.</p><a href="#komponenty" class="card-link">Zobacz wnętrze <span>→</span></a></article>
+        </div>
+      </section>
+
+      <section class="architecture section-shell" id="architektura">
+        <div class="section-intro centered reveal"><span class="section-number">02 /</span><h2>Prosta <em>architektura.</em><br />Właściwy fundament.</h2><p>Xiee OS wykorzystuje moc Linuksa i bezpieczeństwo Rusta, a całość składa z małych, zrozumiałych klocków.</p></div>
+        <div class="stack-diagram reveal">
+          <div class="stack-label">WARSTWY SYSTEMU</div>
+          <div class="stack-row row-apps"><span class="stack-tag">APPS</span><div class="stack-block"><b>XIAC</b><small>app center</small></div><div class="stack-block"><b>XIARR</b><small>browser</small></div><div class="stack-block"><b>XFM</b><small>files</small></div><div class="stack-block"><b>WINYY</b><small>settings</small></div></div>
+          <div class="connector">↑</div>
+          <div class="stack-row row-ui"><span class="stack-tag">UI</span><div class="stack-block wide"><b>XIEE-DESKTOP</b><small>desktop · taskbar · launcher · egui</small></div><div class="stack-block"><b>XIEE-LOGIN</b><small>session</small></div></div>
+          <div class="connector">↑</div>
+          <div class="stack-row row-core"><span class="stack-tag">CORE</span><div class="stack-block wide"><b>XIEE-COMMON</b><small>shared library · services · IPC</small></div><div class="stack-block"><b>XIEE-SHELL</b><small>cli</small></div><div class="stack-block"><b>COREUTILS</b><small>tools</small></div></div>
+          <div class="connector">↑</div>
+          <div class="stack-row row-kernel"><span class="stack-tag">BASE</span><div class="kernel-mark">LINUX</div><div class="kernel-copy"><b>Linux kernel</b><small>sterowniki · procesy · system plików</small></div><div class="rust-badge">RUST <span>memory-safe</span></div></div>
+        </div>
+      </section>
+
+      <section class="components section-shell" id="komponenty">
+        <div class="section-intro reveal"><span class="section-number">03 /</span><h2>Wszystko, czego<br /><em>potrzebujesz.</em></h2><p>Wybierz komponent, żeby zobaczyć, jak Xiee OS zamienia złożoność w przejrzyste narzędzia.</p></div>
+        <div class="component-layout">
+          <div class="component-list reveal" role="tablist">
+            <button class="component-tab active" data-component="desktop" role="tab"><span class="tab-no">01</span><span><b>Xiee Desktop</b><small>Środowisko graficzne</small></span><span class="tab-arrow">↗</span></button>
+            <button class="component-tab" data-component="xiac" role="tab"><span class="tab-no">02</span><span><b>XIAC</b><small>Centrum aplikacji</small></span><span class="tab-arrow">↗</span></button>
+            <button class="component-tab" data-component="xiarr" role="tab"><span class="tab-no">03</span><span><b>XIARR</b><small>Przeglądarka internetowa</small></span><span class="tab-arrow">↗</span></button>
+            <button class="component-tab" data-component="xihh" role="tab"><span class="tab-no">04</span><span><b>XIHH Key</b><small>Manager klastra</small></span><span class="tab-arrow">↗</span></button>
+            <button class="component-tab" data-component="xfm" role="tab"><span class="tab-no">05</span><span><b>XFM + WINYY</b><small>Pliki i ustawienia</small></span><span class="tab-arrow">↗</span></button>
+          </div>
+          <div class="component-detail reveal reveal-delay">
+            <div class="detail-glow"></div><span class="detail-kicker">KOMPONENT / <span id="detailNo">01</span></span><h3 id="detailTitle">Xiee Desktop</h3><p id="detailCopy">Czyste środowisko graficzne z tapetą, taskbarem i launcherem. Wszystko pod ręką, nic nie stoi na drodze.</p><div class="detail-code"><span>$</span> xiee-desktop <i>--start</i></div><div class="detail-orbit">×</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="terminal-section section-shell">
+        <div class="terminal-copy reveal"><span class="section-number">04 /</span><h2>Zobacz, co<br /><em>jest pod spodem.</em></h2><p>Proste komendy. Czytelne odpowiedzi. System, który nie ukrywa się za magią.</p><a class="text-link" href="https://github.com/Mikqexzz17/xieeforjules" target="_blank" rel="noreferrer">Przeglądaj repozytorium <span>↗</span></a></div>
+        <div class="terminal-window reveal reveal-delay"><div class="terminal-bar"><span class="terminal-dot red"></span><span class="terminal-dot yellow"></span><span class="terminal-dot green"></span><span class="terminal-path">xiee@desktop:~</span></div><div class="terminal-body"><p><span class="prompt-green">xiee@system</span>:<span class="prompt-blue">~</span>$ xfetch</p><pre>    <span class="ascii-x">██╗  ██╗</span>  <b>XIEE OS</b>
+    <span class="ascii-x">╚██╗██╔╝</span>  version 0.1.0
+     <span class="ascii-x">╚███╔╝</span>   kernel Linux 6.x
+     <span class="ascii-x">██╔██╗</span>   shell xiee-shell
+    <span class="ascii-x">██╔╝ ██╗</span>  memory 184 MB / 4 GB</pre><p><span class="prompt-green">xiee@system</span>:<span class="prompt-blue">~</span>$ <span class="typing">systemctl list-units</span><span class="blink">▋</span></p><div class="terminal-lines"><span><i>●</i> xiee-login.service</span><span><i>●</i> xiee-desktop.service</span><span><i>●</i> xiac.service</span><span><i>●</i> xihh-key.service</span></div></div></div>
+      </section>
+
+      <section class="roadmap section-shell" id="roadmapa">
+        <div class="roadmap-heading reveal"><span class="section-number">05 /</span><h2>Budujemy<br /><em>krok po kroku.</em></h2><p>Xiee OS rośnie razem ze społecznością. Fundament już działa — teraz czas na kolejne warstwy.</p></div>
+        <div class="timeline reveal reveal-delay">
+          <div class="timeline-line"><span></span></div>
+          <div class="timeline-item done"><span class="timeline-dot">✓</span><div><small>ETAP 01 / GOTOWE</small><h3>CLI i fundament</h3><p>init, shell, coreutils oraz wspólna biblioteka systemowa.</p></div></div>
+          <div class="timeline-item done"><span class="timeline-dot">✓</span><div><small>ETAP 02 / GOTOWE</small><h3>Desktop i aplikacje</h3><p>Środowisko graficzne, XIAC, XIARR, XFM i WINYY.</p></div></div>
+          <div class="timeline-item current"><span class="timeline-dot">03</span><div><small>ETAP 03 / W TOKU</small><h3>Obraz ISO i rootfs</h3><p>Prosta instalacja systemu na prawdziwym sprzęcie.</p><div class="progress-bar"><span></span></div></div></div>
+          <div class="timeline-item"><span class="timeline-dot">04</span><div><small>ETAP 04 / NASTĘPNIE</small><h3>Więcej urządzeń</h3><p>Wsparcie dla kolejnych konfiguracji i klastrów starszych komputerów.</p></div></div>
+        </div>
+      </section>
+
+      <section class="cta-section section-shell reveal"><div class="cta-pattern"></div><span class="eyebrow"><span class="pulse-dot"></span> GOTOWY, ŻEBY ZACZĄĆ?</span><h2>Nie potrzebujesz<br /><em>nowego sprzętu.</em></h2><p>Potrzebujesz systemu, który szanuje ten, który już masz.</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/Mikqexzz17/xieeforjules" target="_blank" rel="noreferrer">Zobacz Xiee OS na GitHub <span>↗</span></a></div></section>
+
+      <section class="faq section-shell"><div class="section-intro centered reveal"><span class="section-number">06 /</span><h2>Masz pytania?<br /><em>Mamy odpowiedzi.</em></h2></div><div class="faq-list reveal"><details open><summary>Czym dokładnie jest Xiee OS?<span>+</span></summary><p>Xiee OS to lekki system operacyjny oparty na Linuksie, którego komponenty i narzędzia są pisane w Rust. Jest tworzony z myślą o starszych urządzeniach oraz o użytkownikach, którzy chcą mieć kontrolę nad swoim systemem.</p></details><details><summary>Dlaczego Rust?<span>+</span></summary><p>Rust daje bezpieczeństwo pamięci bez garbage collectora. To pozwala tworzyć małe i szybkie programy systemowe, zachowując czytelność oraz niezawodność kodu.</p></details><details><summary>Czy mogę uruchomić Xiee OS już dziś?<span>+</span></summary><p>Projekt jest w aktywnym rozwoju. Fundament i poszczególne komponenty są gotowe, a obraz ISO/rootfs znajduje się na roadmapie. Kod możesz śledzić i budować lokalnie z repozytorium.</p></details></div></section>
+    </main>
+    <footer class="site-footer section-shell"><a class="brand" href="#start"><span class="brand-mark"><span>×</span></span><span class="brand-name">XIEE <em>OS</em></span></a><span>© 2025 Xiee OS · MIT License</span><div><a href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Opis projektu ↗</a><a href="https://github.com/Mikqexzz17/xieeforjules" target="_blank" rel="noreferrer">Kod źródłowy ↗</a></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
