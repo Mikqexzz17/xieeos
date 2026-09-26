@@ -64,7 +64,7 @@
           </div>
           <div class="float-chip chip-top"><span class="chip-icon green">↯</span><span>RAM usage <b>184 MB</b></span></div>
           <div class="float-chip chip-bottom"><span class="chip-icon orange">◎</span><span>Built with <b>Rust</b></span></div>
-          <div class="visual-label">XI / 2025</div>
+          <div class="visual-label">XI / 2026</div>
         </div>
       </section>
 
@@ -111,8 +111,18 @@
         </div>
       </section>
 
+      <section class="whats-new section-shell" id="nowosci">
+        <div class="section-intro reveal"><span class="section-number">04 /</span><h2>Najnowsze<br /><em>zmiany.</em></h2><p>Projekt idzie do przodu. Oto nowości z repozytorium Xiee OS na 26 września 2026.</p></div>
+        <div class="news-grid">
+          <article class="news-card news-feature reveal"><div class="news-meta"><span class="news-icon">↗</span><span>ISO / INSTALACJA</span><time datetime="2026-09-26">26.09.2026</time></div><h3>Pierwszy bootowalny<br />obraz Xiee OS</h3><p>Repozytorium zawiera skrypty budowania rootfs i ISO oraz skrypt instalujący binaria. Ostatni commit zgłasza wygenerowany obraz Xiee OS 0.1.0 o rozmiarze 106 MB.</p><div class="news-foot"><span>106 MB</span><a href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Skrypty budowania ↗</a></div></article>
+          <article class="news-card reveal reveal-delay"><div class="news-meta"><span class="news-icon orange">⌘</span><span>DESKTOP</span><time datetime="2026-09-26">26.09.2026</time></div><h3>Pulpit robi<br />więcej.</h3><p>Skróty na pulpicie odświeżają się automatycznie. Okna można minimalizować bez zatrzymywania aplikacji, a XIARR może dodawać skróty.</p></article>
+          <article class="news-card reveal reveal-delay-2"><div class="news-meta"><span class="news-icon blue">⌁</span><span>CODZIENNE NARZĘDZIA</span><time datetime="2026-09-18">18.09.2026</time></div><h3>Discord i świeże<br />narzędzia.</h3><p>Discord trafił do launchera. Xiee-shell zapamiętuje historię poleceń, a coreutils zyskały m.in. xmkdir i xrm.</p></article>
+        </div>
+        <div class="news-note reveal"><span class="pulse-dot"></span><p>Projekt raportuje udany build CI z 26.09.2026. Wygenerowane ISO opisano w repozytorium; nie znaleziono opublikowanego wydania z plikiem do pobrania.</p><a href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Repozytorium Xiee <span>↗</span></a></div>
+      </section>
+
       <section class="terminal-section section-shell">
-        <div class="terminal-copy reveal"><span class="section-number">04 /</span><h2>Zobacz, co<br /><em>jest pod spodem.</em></h2><p>Proste komendy. Czytelne odpowiedzi. System, który nie ukrywa się za magią.</p><a class="text-link" href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Przeglądaj repozytorium <span>↗</span></a></div>
+        <div class="terminal-copy reveal"><span class="section-number">05 /</span><h2>Zobacz, co<br /><em>jest pod spodem.</em></h2><p>Proste komendy. Czytelne odpowiedzi. System, który nie ukrywa się za magią.</p><a class="text-link" href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Przeglądaj repozytorium <span>↗</span></a></div>
         <div class="terminal-window reveal reveal-delay"><div class="terminal-bar"><span class="terminal-dot red"></span><span class="terminal-dot yellow"></span><span class="terminal-dot green"></span><span class="terminal-path">xiee@desktop:~</span></div><div class="terminal-body"><p><span class="prompt-green">xiee@system</span>:<span class="prompt-blue">~</span>$ xfetch</p><pre>    <span class="ascii-x">██╗  ██╗</span>  <b>XIEE OS</b>
     <span class="ascii-x">╚██╗██╔╝</span>  version 0.1.0
      <span class="ascii-x">╚███╔╝</span>   kernel Linux 6.x
@@ -121,21 +131,21 @@
       </section>
 
       <section class="roadmap section-shell" id="roadmapa">
-        <div class="roadmap-heading reveal"><span class="section-number">05 /</span><h2>Budujemy<br /><em>krok po kroku.</em></h2><p>Xiee OS rośnie razem ze społecznością. Fundament już działa — teraz czas na kolejne warstwy.</p></div>
+        <div class="roadmap-heading reveal"><span class="section-number">06 /</span><h2>Budujemy<br /><em>krok po kroku.</em></h2><p>Xiee OS rośnie razem ze społecznością. Fundament już działa — teraz czas na kolejne warstwy.</p></div>
         <div class="timeline reveal reveal-delay">
           <div class="timeline-line"><span></span></div>
           <div class="timeline-item done"><span class="timeline-dot">✓</span><div><small>ETAP 01 / GOTOWE</small><h3>CLI i fundament</h3><p>init, shell, coreutils oraz wspólna biblioteka systemowa.</p></div></div>
           <div class="timeline-item done"><span class="timeline-dot">✓</span><div><small>ETAP 02 / GOTOWE</small><h3>Desktop i aplikacje</h3><p>Środowisko graficzne, XIAC, XIARR, XFM i WINYY.</p></div></div>
-          <div class="timeline-item current"><span class="timeline-dot">03</span><div><small>ETAP 03 / W TOKU</small><h3>Obraz ISO i rootfs</h3><p>Prosta instalacja systemu na prawdziwym sprzęcie.</p><div class="progress-bar"><span></span></div></div></div>
+          <div class="timeline-item done"><span class="timeline-dot">✓</span><div><small>ETAP 03 / GOTOWE</small><h3>Obraz ISO i rootfs</h3><p>Skrypty rootfs i ISO są w repozytorium; projekt zgłasza wygenerowanie obrazu 0.1.0.</p></div></div>
           <div class="timeline-item"><span class="timeline-dot">04</span><div><small>ETAP 04 / NASTĘPNIE</small><h3>Więcej urządzeń</h3><p>Wsparcie dla kolejnych konfiguracji i klastrów starszych komputerów.</p></div></div>
         </div>
       </section>
 
       <section class="cta-section section-shell reveal"><div class="cta-pattern"></div><span class="eyebrow"><span class="pulse-dot"></span> GOTOWY, ŻEBY ZACZĄĆ?</span><h2>Nie potrzebujesz<br /><em>nowego sprzętu.</em></h2><p>Potrzebujesz systemu, który szanuje ten, który już masz.</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Zobacz Xiee OS na GitHub <span>↗</span></a></div></section>
 
-      <section class="faq section-shell"><div class="section-intro centered reveal"><span class="section-number">06 /</span><h2>Masz pytania?<br /><em>Mamy odpowiedzi.</em></h2></div><div class="faq-list reveal"><details open><summary>Czym dokładnie jest Xiee OS?<span>+</span></summary><p>Xiee OS to lekki system operacyjny oparty na Linuksie, którego komponenty i narzędzia są pisane w Rust. Jest tworzony z myślą o starszych urządzeniach oraz o użytkownikach, którzy chcą mieć kontrolę nad swoim systemem.</p></details><details><summary>Dlaczego Rust?<span>+</span></summary><p>Rust daje bezpieczeństwo pamięci bez garbage collectora. To pozwala tworzyć małe i szybkie programy systemowe, zachowując czytelność oraz niezawodność kodu.</p></details><details><summary>Czy mogę uruchomić Xiee OS już dziś?<span>+</span></summary><p>Projekt jest w aktywnym rozwoju. Fundament i poszczególne komponenty są gotowe, a obraz ISO/rootfs znajduje się na roadmapie. Kod możesz śledzić i budować lokalnie z repozytorium.</p></details></div></section>
+      <section class="faq section-shell"><div class="section-intro centered reveal"><span class="section-number">07 /</span><h2>Masz pytania?<br /><em>Mamy odpowiedzi.</em></h2></div><div class="faq-list reveal"><details open><summary>Czym dokładnie jest Xiee OS?<span>+</span></summary><p>Xiee OS to lekki system operacyjny oparty na Linuksie, którego komponenty i narzędzia są pisane w Rust. Jest tworzony z myślą o starszych urządzeniach oraz o użytkownikach, którzy chcą mieć kontrolę nad swoim systemem.</p></details><details><summary>Dlaczego Rust?<span>+</span></summary><p>Rust daje bezpieczeństwo pamięci bez garbage collectora. To pozwala tworzyć małe i szybkie programy systemowe, zachowując czytelność oraz niezawodność kodu.</p></details><details><summary>Czy mogę uruchomić Xiee OS już dziś?<span>+</span></summary><p>Repozytorium zawiera skrypty budowania rootfs i bootowalnego ISO; projekt zgłasza wygenerowanie obrazu 0.1.0. Sprawdź repozytorium, aby zobaczyć aktualne instrukcje i dostępne pliki.</p></details></div></section>
     </main>
-    <footer class="site-footer section-shell"><a class="brand" href="#start"><span class="brand-mark"><span>×</span></span><span class="brand-name">XIEE <em>OS</em></span></a><span>© 2025 Xiee OS · MIT License</span><div><a href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Opis projektu ↗</a><a href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Kod źródłowy ↗</a></div></footer>
+    <footer class="site-footer section-shell"><a class="brand" href="#start"><span class="brand-mark"><span>×</span></span><span class="brand-name">XIEE <em>OS</em></span></a><span>© 2026 Xiee OS · MIT License</span><div><a href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Opis projektu ↗</a><a href="https://github.com/Mikqexzz17/xiee" target="_blank" rel="noreferrer">Kod źródłowy ↗</a></div></footer>
     <script src="script.js"></script>
   </body>
 </html>
